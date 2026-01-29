@@ -1,0 +1,9 @@
+! Title: X Sidebar Cleaner
+! Version: 2025.01.29
+! Last modified: 2026-01-29 19:50:00
+
+x.com##a[href="/i/grok"]
+x.com##a[href="/i/jf/creators/studio"]
+x.com##a[href="/i/premium_sign_up"]
+x.com##a[href="/i/verified-orgs-signup"]
+x.com##:has(> a[href="https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"])
