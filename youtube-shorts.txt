@@ -1,0 +1,22 @@
+! Title: Hide YouTube Shorts
+! Version: 2025.1.29
+! Last modified: 2026-01-29 19:40:00
+
+! Remove Shorts items from grids/search
+youtube.com##ytd-rich-item-renderer:has(a[href*="/shorts/"])
+youtube.com##ytd-video-renderer:has(ytd-thumbnail a[href*="/shorts/"])
+youtube.com##ytd-grid-video-renderer:has(ytd-thumbnail a[href*="/shorts/"])
+
+! Hide Shorts in sidebar
+youtube.com##ytd-guide-entry-renderer:has(a[title="Shorts"])
+youtube.com##ytd-guide-entry-renderer:has(a[title="ショート"])
+youtube.com##ytd-mini-guide-entry-renderer:has(a[title="Shorts"])
+youtube.com##ytd-mini-guide-entry-renderer:has(a[title="ショート"])
+
+! Remove Shorts shelves
+youtube.com##ytd-rich-shelf-renderer:has(h2 > yt-icon:not([hidden]))
+youtube.com##ytd-reel-shelf-renderer
+
+! Hide Shorts tab on channel pages
+youtube.com##yt-tab-shape:has(.yt-tab-shape__tab:has-text(Shorts))
+youtube.com##yt-tab-shape:has(.yt-tab-shape__tab:has-text(ショート))
